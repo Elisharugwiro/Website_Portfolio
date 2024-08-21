@@ -819,12 +819,12 @@ body.light hr.separator {
   text-align: center;
   z-index: 1;
   border-radius: 50%;
-  color: #fff;
+  color: #0c15c4;
   background-color: #252525;
 }
 
 .about .resume-box .time {
-  color: #fff;
+  color: #0c15c4;
   font-size: 12px;
   padding: 1px 10px;
   display: inline-block;
@@ -842,7 +842,7 @@ body.light hr.separator {
 
 .about .resume-box p {
   margin: 0;
-  color: #eee;
+  color: #0c15c4;
   font-size: 14px;
 }
 
@@ -859,7 +859,7 @@ body.light hr.separator {
   content: '';
   width: 10px;
   height: 2px;
-  background-color: #fff;
+  background-color:#0c15c4;
   left: 7px;
   top: 9px;
   opacity: .8;
@@ -874,7 +874,7 @@ body.light hr.separator {
 }
 
 .about .c100 > span {
-  color: #fff;
+  color: #0c15c4;
 }
 
 .about .c100:after {
@@ -958,7 +958,7 @@ body.light hr.separator {
 .portfolio .grid li figure div span {
   margin: 0;
   text-transform: uppercase;
-  color: #fff;
+  color: #0c15c4;
   font-size: 18px;
 }
 
