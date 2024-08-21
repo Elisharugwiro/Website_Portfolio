@@ -581,7 +581,7 @@ body.light hr.separator {
   }
 
   .header ul.icon-menu li.icon-box i {
-    color: #ddd;
+    color: #0c15c4;
     font-size: 19px;
     transition: .3s;
   }
@@ -590,7 +590,7 @@ body.light hr.separator {
   .header ul.icon-menu li.icon-box:hover,
   .header ul.icon-menu li.icon-box.active i,
   .header ul.icon-menu li.icon-box:hover i {
-    color: #fff;
+    color: #0c15c4;
   }
 
   .header .icon-box h2 {
@@ -626,7 +626,7 @@ body.light hr.separator {
     top: 0;
     right: 0;
     opacity: 0;
-    color: #fff;
+    color: black;
     line-height: 50px;
     font-weight: 500;
     transition: all .3s;
@@ -705,12 +705,12 @@ body.light hr.separator {
 }
 
 .home .home-details h1 span {
-  color: #fff;
+  color: black;
   display: block;
 }
 
 .home .home-details h6 {
-  color: #eee;
+  color:black;
   font-size: 22px;
   font-weight: 400;
   display: block;
@@ -783,7 +783,7 @@ body.light hr.separator {
   top: 13px;
   width: 30px;
   height: 1px;
-  background: #777;
+  background:#0c15c4;
 }
 
 /* Resume */
