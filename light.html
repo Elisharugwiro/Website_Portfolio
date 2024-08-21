@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Website Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Template Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+    <!-- Template CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/component.css" rel="stylesheet">
+    <link href="css/circle.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- CSS Skin File -->
+    <link href="css/skins/green.css" rel="stylesheet">
+    <!-- Live Style Switcher - demo only -->
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css">
+    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css">
+    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css">
+    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css">
+    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css">
+    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css">
+    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css">
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css">
+    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css">
+    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css">
+    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css">
+    <!-- Modernizr JS File -->
+    <script src="js/modernizr.min.js"></script>
+  </head>
+  <body class="light home-page">
+    <!-- Live Style Switcher Starts - demo only -->
+    <div id="switcher" class="">
+      <div class="content-switcher">
+        <h4>COLOR SWITCHER</h4>
+        <ul>
+  
+          <li>
+            <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color">
+              <img src="img/styleswitcher/blue.png" alt="blue">
+            </a>
+          </li>
+          <li>
+        </ul>
+        <h4>TRANSITION DIRECTION</h4>
+        <div class="flex justify-between transition-direction">
+          <div id="cornertopleft">
+            <div class="arrow cornertopleft"></div>
+          </div>
+          <div class="active" id="top">
+            <div class="arrow top"></div>
+          </div>
+          <div id="cornertopright">
+            <div class="arrow cornertopright"></div>
+          </div>
+        </div>
+        <div class="flex justify-between transition-direction">
+          <div id="left">
+            <div class="arrow left"></div>
+          </div>
+          <div id="right">
+            <div class="arrow right"></div>
+          </div>
+        </div>
+        <div class="flex justify-between transition-direction">
+          <div id="cornerbottomleft">
+            <div class="arrow cornerbottomleft"></div>
+          </div>
+          <div id="bottom">
+            <div class="arrow bottom"></div>
+          </div>
+          <div id="cornerbottomright">
+            <div class="arrow cornerbottomright"></div>
+          </div>
+        </div>
+        <span>Navigate between sections to see the effect.</span>
+        <div id="hideSwitcher">&times;</div>
+      </div>
+    </div>
+    <!-- <div id="showSwitcher" class="styleSecondColor">
+      <i class="fa fa-cog fa-spin"></i>
+    </div> -->
+    <!-- Live Style Switcher Ends - demo only -->
+    <!-- PRELOADER STARTS -->
+    <div id="preloader">
+      <div class="line"></div>
+    </div>
+    <!-- PRELOADER ENDS -->
+    <!-- Header Starts -->
+    <header class="header" id="navbar-collapse-toggle">
+      <!-- Fixed Navigation Starts -->
+      <ul id="desktop-nav" class="icon-menu d-none d-lg-block">
+        <li class="icon-box desktop-nav-element active">
+          <i class="fa fa-home"></i>
+          <div>
+            <h2>Home</h2>
+          </div>
+        </li>
+        <li class="icon-box desktop-nav-element">
+          <i class="fa fa-user"></i>
+          <div>
+            <h2>About</h2>
+          </div>
+        </li>
+        <li class="icon-box desktop-nav-element">
+          <i class="fa fa-envelope-open"></i>
+          <div>
+            <h2>Contact</h2>
+          </div>
+      </ul>
+      <!-- Fixed Navigation Ends -->
+      <!-- Mobile Menu Starts -->
+      <nav class="d-block d-lg-none">
+        <div class="inputmobile" id="inputmobile">
+          <div id="trigger-mobile" class="trigger-mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="list-unstyled" id="mobile-nav">
+            <li class="mobile-nav-element home-link active">
+              <div>
+                <i class="fa fa-home"></i>
+                <span>Home</span>
+              </div>
+            </li>
+            <li class="mobile-nav-element">
+              <div>
+                <i class="fa fa-user"></i>
+                <span>About</span>
+              </div>
+            </li>
+            <li class="mobile-nav-element">
+              <div>
+                <i class="fa fa-envelope-open"></i>
+                <span>Contact</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Mobile Menu Ends -->
+    </header>
+    <!-- Header Ends -->
+    <!-- Main Content Starts -->
+    <div class="pages">
+      <!-- Home Starts -->
+      <div class="page page--current" id="home">
+        <div class="home">
+          <div class="container-fluid main-container container-home p-0">
+            <div class="color-block d-none d-lg-block"></div>
+            <div class="row home-details-container align-items-center">
+              <img class="col-lg-4 position-fixed d-none d-lg-block" src="img/img-profile.jpg" alt="">
+              <div class="col-12 col-lg-8 offset-lg-4 home-details text-left text-sm-center text-lg-left">
+                <div>
+                  <img src="img/img-profile.jpg" class="img-fluid main-img-mobile d-none d-sm-block d-lg-none" alt="my picture">
+                  <h1 class="text-uppercase poppins-font">ELISA RUGWIRO. <span>web designer</span>
+                  </h1>
+                  <p class="open-sans-font">Highly motivated and results-oriented UI/UX Graphic Designer and Website Designer with a passion for creating user-centric experiences. Skilled in user research, information architecture, wire framing, prototyping, and visual design. Eager to leverage my skills and creativity to contribute to the success of a design-focused team.</p>
+                  <a id="link-about" class="button">
+                    <span class="button-text">more about me</span>
+                    <span class="button-icon fa fa-arrow-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Home Ends -->
+      <!-- About Starts -->
+      <div class="page" id="about">
+        <!-- Main Content Starts -->
+        <!-- Section Title Starts -->
+        <div class="title-section text-left text-sm-center">
+          <h2>ABOUT <span>ME</span>
+          </h2>
+          <span class="title-bg">Resume</span>
+        </div>
+        <!-- Section Title Ends -->
+        <div class="about">
+          <div class="main-content">
+            <div class="container">
+              <div class="row">
+                <!-- Personal Info Starts -->
+                <center>
+                  <div class="col-12 col-lg-5 col-xl-6">
+                    <div class="row">
+                      <div class="col-12">
+                        <h3 class="text-uppercase custom-title mb-0 ft-wt-600">personal infos</h3>
+                      </div>
+                      <div class="col-12 d-block d-sm-none">
+                        <img src="img/img-profile.jpeg" class="img-fluid main-img-mobile" alt="my picture">
+                      </div>
+                      <div class="col-6">
+                        <ul class="about-list list-unstyled open-sans-font">
+                          <li>
+                            <span class="title">first name :</span>
+                            <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block"> ELISA</span>
+                          </li>
+                          <li>
+                            <span class="title">last name :</span>
+                            <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Rugwiro</span>
+                          </li>
+                          <li>
+                            <span class="title">Age :</span>
+                            <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">23 Years</span>
+                          </li>
+                          <li>
+                            <span class="title">Nationality :</span>
+                            <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Rwandan</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-6">
+                        <ul class="about-list list-unstyled open-sans-font">
+                          <li>
+                            <span class="title">Address :</span>
+                            <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Kigali City, Rwanda</span>
+                          </li>
+                          <li>
+                            <span class="title">phone :</span>
+                            <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">+250794328739</span>
+                          </li>
+                          <li>
+                            <span class="title">Email :</span>
+                            <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">elisharugwiro@gmail.com</span>
+                          </li>
+                          <li>
+                            <span class="title">langages :</span>
+                            <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">English, French, Kinyarwanda</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-12 mt-3">
+                        <a class="button" href="#">
+                          <span class="button-text">Download CV</span>
+                          <span class="button-icon fa fa-download"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </center>
+                <!-- Personal Info Ends -->
+              </div>
+              
+             
+              <hr class="separator mt-1">
+              <!-- Experience & Education Starts -->
+              <div class="row">
+                <div class="col-12">
+                  <h3 class="text-uppercase pb-5 mb-0 text-left text-sm-center custom-title ft-wt-600">Experience <span>&</span> Education </h3>
+                </div>
+                <div class="col-lg-6 m-15px-tb">
+                  <div class="resume-box">
+                    <ul>
+                      <li>
+                        <div class="icon">
+                          <i class="fa fa-briefcase"></i>
+                        </div>
+                        <span class="time open-sans-font text-uppercase">2024 - Present</span>
+                        <h5 class="poppins-font text-uppercase">KLAB - Software development intern  <span class="place open-sans-font">Envato</span>
+                        </h5>
+                        <p class="open-sans-font">Internship for Industrial attachment </p>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <i class="fa fa-briefcase"></i>
+                        </div>
+                        <span class="time open-sans-font text-uppercase">2018 - Present</span>
+                        <h5 class="poppins-font text-uppercase">UI/UX Designer <span class="place open-sans-font">Themeforest</span>
+                        </h5>
+                        <p class="open-sans-font">Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt</p>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <i class="fa fa-briefcase"></i>
+                        </div>
+                        <span class="time open-sans-font text-uppercase">2021 - 2024</span>
+                        <h5 class="poppins-font text-uppercase">ACADEMIC PROJECTS  <span class="place open-sans-font">TUMBA-College</span>
+                        </h5>
+                        <p class="open-sans-font">Efficient pitching and working on Software development projects .</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-6 m-15px-tb">
+                  <div class="resume-box">
+                    <ul>
+                      <li>
+                        <div class="icon">
+                          <i class="fa fa-graduation-cap"></i>
+                        </div>
+                        <span class="time open-sans-font text-uppercase">2022</span>
+                        <h5 class="poppins-font text-uppercase">Filmmaker, editor and Photographer <span class="place open-sans-font">Kigali Special Pictures</span>
+                        </h5>
+                        <p class="open-sans-font">Acquired skills in photography, videography, 
+                          Video Editor experienced in Adobe Premier and colourist in Davinci resolver.</p>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <i class="fa fa-graduation-cap"></i>
+                        </div>
+                        <span class="time open-sans-font text-uppercase">2024 - Present</span>
+                        <h5 class="poppins-font text-uppercase">IPRC TUMBA - Information and Technology (IT)  <span class="place open-sans-font">IPRC TUMBA College</span>
+                        </h5>
+                        <p class="open-sans-font">Completing Diploma in IT</p>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <i class="fa fa-graduation-cap"></i>
+                        </div>
+                        <span class="time open-sans-font text-uppercase">2024</span>
+                        <h5 class="poppins-font text-uppercase"> EF SET - Certificate <span class="place open-sans-font">EF</span>
+                        </h5>
+                        <p class="open-sans-font">English Proficiency </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Experience & Education Ends -->
+            </div>
+          </div>
+        </div>
+        <!-- Main Content Ends -->
+      </div>
+      <!-- About Ends -->
+      <!-- portifolio -->
+      <!-- Contact Starts -->
+      <div class="page" id="contact">
+        <div class="contact">
+          <div class="title-section text-left text-sm-center">
+            <h2>CONTACT <span>ME</span>
+            </h2>
+            <span class="title-bg">contact</span>
+          </div>
+          <div class="main-content">
+            <div class="container">
+              <div class="row">
+                <!-- Left Side Starts -->
+                <div class="col-12 col-lg-4">
+                  <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">Contact Me!</h3>
+                  <p class="open-sans-font mb-3">Feel free to get in touch with me. I am always open to discuss about new projects, creative ideas or opportunities to be part of your visions.</p>
+                  <p class="open-sans-font custom-span-contact position-relative">
+                    <i class="fa fa-envelope-open position-absolute"></i>
+                    <span class="d-block">elisharugwiro@gmail.com</span>elisharugwiro@gmail.com<
+                  </p>
+                  <p class="open-sans-font custom-span-contact position-relative">
+                    <i class="fa fa-phone-square position-absolute"></i>
+                    <span class="d-block">call me</span>+250781461323
+                  </p>
+                  <ul class="social list-unstyled pt-1 mb-5">
+                    <li class="facebook">
+                      <a title="Facebook" href="#">
+                        <i class="fa fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li class="twitter">
+                      <a title="Twitter" href="#">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="youtube">
+                      <a title="Youtube" href="#">
+                        <i class="fa fa-youtube"></i>
+                      </a>
+                    </li>
+                    <li class="dribbble">
+                      <a title="Dribbble" href="#">
+                        <i class="fa fa-dribbble"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Left Side Ends -->
+                <!-- Contact Form Starts -->
+                <div class="col-12 col-lg-8">
+                  <form class="contactform" method="post" action="php/process-form.php">
+                    <div class="contactform">
+                      <div class="row">
+                        <div class="col-12 col-md-4">
+                          <input autocomplete="off" type="text" name="name" placeholder="YOUR NAME">
+                        </div>
+                        <div class="col-12 col-md-4">
+                          <input autocomplete="off" type="email" name="email" placeholder="YOUR EMAIL">
+                        </div>
+                        <div class="col-12 col-md-4">
+                          <input autocomplete="off" type="text" name="subject" placeholder="YOUR SUBJECT">
+                        </div>
+                        <div class="col-12">
+                          <textarea name="message" placeholder="YOUR MESSAGE"></textarea>
+                          <button type="submit" class="button">
+                            <span class="button-text">Send Message</span>
+                            <span class="button-icon fa fa-send"></span>
+                          </button>
+                        </div>
+                        <div class="col-12 form-message">
+                          <span class="output_message text-center font-weight-600 text-uppercase"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- Contact Form Ends -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Contact Ends -->
+     
+    <!-- Main Content Ends -->
+    <!-- Template JS Files -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/styleswitcher.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cbpGridGallery.js"></script>
+    <script src="js/jquery.hoverdir.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/popper.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
